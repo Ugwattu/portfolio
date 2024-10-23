@@ -22,7 +22,7 @@
         }
 
         .heading {
-            font-family: 'Lato-bold', sans-serif; /* Use Lato font */
+            font-family: 'Lato', sans-serif; /* Use Lato font */
             font-size: 20px; /* Adjust font size as needed */
             font-weight: bold; /* Light font weight */
             text-align: center; /* Center the subheading */
@@ -73,14 +73,14 @@
             display: flex; /* Use flexbox for button layout */
             justify-content: space-between; /* Center the buttons */
             flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-            margin: 0 20%; /* Adjust margin for better alignment */
+            margin: 0 10%; /* Adjust margin for better alignment */
         }
 
         .button {
             display: flex; /* Use flexbox for button layout */
             align-items: center; /* Center items vertically */
             justify-content: center; /* Center items horizontally */
-            flex: 1 0 calc(25% - 20px); /* Allow buttons to grow and fit three in a row */
+            flex: 1 0 calc(25% - 20px); /* Allow buttons to grow and fit four in a row */
             margin: 1% 1%; /* Space between buttons */
             background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
             color: white;
@@ -126,8 +126,8 @@
             }
 
             .profile img {
-                width: 150px; /* Adjust size for mobile */
-                height: 150px; /* Adjust size for mobile */
+                width: 250px; /* Adjust size for mobile */
+                height: 250px; /* Adjust size for mobile */
                 margin: 0; /* Remove margins for better alignment */
             }
 
@@ -149,8 +149,8 @@
             p {
                 margin: 5% 10%; /* Reduced margin for mobile */
                 font-size: 14px;
-
             }
+
         }
 
         @media (min-width: 601px) {
@@ -165,28 +165,41 @@
         }
 
         /* New styles for the Support section buttons */
-        .support-section .button {
-            flex: 1 0 calc(15% - 5px); /* Adjust width for support buttons */
-            margin: 0.6% 0.6%; /* Adjust margins if needed */
-            height: 200%; /* Increased height for buttons in this section */
-            padding: 20px; /* Adjust padding for better appearance */
-        }
-
-        .support-button div {
+        .support-section .button-container {
             display: flex;
-            flex-direction: column; /* Stack the icon and text vertically */
-            align-items: center; /* Center align items */
+            justify-content: space-around; /* Evenly space buttons */
+            flex-wrap: wrap; /* Allow wrapping */
+            width: 90%; /* Full width of the parent */
+            max-width: auto;
+            margin: 0 auto; /* Center the container */
         }
 
-        .support-button img {
-            margin-bottom: 5px; /* Add space between the icon and the text */
+        .support-section .button {
+            flex: 1 0 calc(20% - 10px); /* 5 buttons per row */
+            height: 60px; /* Consistent height */
+            margin: 5px; /* Space around buttons */
+            padding: 10px; /* Padding inside buttons */
+            text-align: center; /* Center text within button */
+        }
+
+        @media (max-width: 900px) {
+            .support-section .button {
+                flex: 1 0 1calc(50% - 10px); /* 3 buttons per row on tablets */
+                height: 50px; /* Adjust height for tablets */
+            }
         }
 
         @media (max-width: 600px) {
-            .support-section .button-text {
-                display: flow-root;
+            .support-section .button {
+                flex: 1 0 100%;
+                padding: 1px;
             }
+            .support-section .button-text{
+              display: inline;
+            }
+            
         }
+
     </style>
 </head>
 <body>
@@ -204,7 +217,7 @@
 
     <div class="heading">
         <span>- Connect -</span>
-      </div>
+    </div>
 
     <div class="button-container">
         <a href="mailto:umair.ghafoor06@gmail.com" class="button" target="_blank">
@@ -294,7 +307,7 @@
           target="_blank"
         >
           <img
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstripe.com%2Fimg%2Fweb%2Fstripe-logo-color.png&f=1&nofb=1&ipt=4f405e8a40a358c0b97cb4a74f9be8b2346884b784573f302b8b3029d0544d9a&ipo=images"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGluJhW7I1NYU7jF77E-9K9I46_ib_DUNHw&s"
             alt="Stripe Icon"
           />
           <span class="button-text">Stripe</span>
