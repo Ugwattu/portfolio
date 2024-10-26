@@ -106,7 +106,7 @@ body {
 }
 
 /* Line with Dots Sections */
-.line-with-dots {
+.line-with-dots1, .line-with-dots2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,7 +115,7 @@ body {
     color: #E5E7EB; /* Text color */
 }
 
-.line-with-dots .dot {
+.line-with-dots1 .dot, .line-with-dots2 .dot {
     width: 10px;
     height: 10px;
     background-color: #2563EB; /* Dot color (blue) */
@@ -123,7 +123,7 @@ body {
     margin: 0 10px;
 }
 
-.line-with-dots .text {
+.line-with-dots1 .text, .line-with-dots2 .text{
     position: relative;
     padding: 0 15px;
     font-size: 1.5em;
@@ -131,13 +131,22 @@ body {
     white-space: nowrap;
 }
 
-.line-with-dots::before,
-.line-with-dots::after {
+.line-with-dots1::before,
+.line-with-dots1::after{
     content: '';
-    flex: 0 0 30%;
+    flex: 0 0 29%;
     border-bottom: 3px dotted #9CA3AF; /* Dotted line color */
     margin: 0 10px;
-    max-width: 10%;
+    max-width: 30%;
+}
+
+.line-with-dots2::before,
+.line-with-dots2::after {
+    content: '';
+    flex: 0 0 26%;
+    border-bottom: 3px dotted #9CA3AF; /* Dotted line color */
+    margin: 0 10px;
+    max-width: 27%;
 }
 
 /* Media Queries */
