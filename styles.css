@@ -105,78 +105,40 @@ body {
     text-align: center; /* Center text */
 }
 
-/* Line with Dots Section 1*/
-.line-with-dots1 {
+/* Line with Dots Sections */
+.line-with-dots {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin: 20px 0;
     color: #E5E7EB; /* Text color */
-  }
-  
-  .line-with-dots1 .dot {
+}
+
+.line-with-dots .dot {
     width: 10px;
     height: 10px;
     background-color: #2563EB; /* Dot color (blue) */
     border-radius: 50%;
     margin: 0 10px;
-  }
-  
-  .line-with-dots1 .text {
+}
+
+.line-with-dots .text {
     position: relative;
     padding: 0 15px;
     font-size: 1.5em;
     font-weight: bold;
     white-space: nowrap;
-  }
-  
-  .line-with-dots1::before,
-  .line-with-dots1::after {
+}
+
+.line-with-dots::before,
+.line-with-dots::after {
     content: '';
     flex: 0 0 30%;
     border-bottom: 3px dotted #9CA3AF; /* Dotted line color */
     margin: 0 10px;
-    /* Added max-width to prevent line from crossing the bio section */
-    max-width: 30%;
-  }
-
-  /* Line with Dots Section 2*/
-.line-with-dots2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 20px 0;
-    color: #E5E7EB; /* Text color */
-  }
-  
-  .line-with-dots2 .dot {
-    width: 10px;
-    height: 10px;
-    background-color: #2563EB; /* Dot color (blue) */
-    border-radius: 50%;
-    margin: 0 10px;
-  }
-  
-  .line-with-dots2 .text {
-    position: relative;
-    padding: 0 15px;
-    font-size: 1.5em;
-    font-weight: bold;
-    white-space: nowrap;
-  }
-  
-  .line-with-dots2::before,
-  .line-with-dots2::after {
-    content: '';
-    flex: 0 0 30%;
-    border-bottom: 3px dotted #9CA3AF; /* Dotted line color */
-    margin: 0 10px;
-    /* Added max-width to prevent line from crossing the bio section */
-    max-width: 27%;
-  }
-
+    max-width: 10%;
+}
 
 /* Media Queries */
 @media (max-width: 600px) {
