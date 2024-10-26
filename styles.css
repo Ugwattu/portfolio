@@ -1,10 +1,10 @@
 /* Global Styles */
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #111827; /* Slightly lighter background for contrast */
-    color: #E5E7EB; /* Lighter text color for better readability */
+    background-color: #111827; /* Dark background for contrast */
+    color: #E5E7EB; /* Light text for readability */
     margin: 0;
-    padding: 0 15%; /* Uniform side padding */
+    padding: 0 15%; /* Side padding */
 }
 
 .heading {
@@ -12,7 +12,7 @@ body {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #F9FAFB; /* Bright color for headings */
+    color: #F9FAFB; /* Bright headings */
 }
 
 /* Profile Section */
@@ -25,8 +25,8 @@ body {
 
 .profile img {
     border-radius: 10%;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -34,7 +34,7 @@ body {
     font-size: 1.8em; /* Increased name size */
     font-weight: bold;
     margin-left: 15px;
-    color: #F9FAFB; /* Bright color for names */
+    color: #F9FAFB; /* Bright names */
 }
 
 .subheading {
@@ -42,7 +42,8 @@ body {
     font-weight: 300;
     font-size: 1.2em;
     margin-left: 15px;
-    color: #D1D5DB; /* Softer color for subheading */
+    color: #D1D5DB; /* Softer subheading color */
+    max-width: 17em;
 }
 
 /* Bio Section */
@@ -50,7 +51,8 @@ body {
     font-size: 1.1em; /* Standard paragraph size */
     line-height: 1.5; /* Improved readability */
     margin: 20px 15%;
-    color: #D1D5DB; /* Maintain consistency with subheading color */
+    text-align: justify;
+    color: #D1D5DB; /* Consistent color */
 }
 
 /* Button Containers */
@@ -58,8 +60,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px; /* Added gap for better spacing */
+    gap: 15px; /* Improved spacing */
     padding: 20px;
+    margin: 0 auto;
+    max-width: 55em;
 }
 
 /* Buttons */
@@ -68,10 +72,10 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 10px 20px;
     text-decoration: none;
-    color: #E5E7EB; /* Consistent button text color */
+    color: #E5E7EB; /* Button text color */
     transition: background-color 0.3s, box-shadow 0.3s;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     flex: 1;
@@ -89,42 +93,39 @@ body {
     width: 24px;
     height: 24px;
     border-radius: 5px;
-}
-
-.button-text {
-    text-align: center; /* Center text */
-}
-
-.button img {
-    filter: grayscale(100%); /* Make images colorless */
-    transition: filter 0.3s; /* Smooth transition for filter */
+    filter: grayscale(100%); /* Grayscale by default */
+    transition: filter 0.3s; /* Smooth filter transition */
 }
 
 .button:hover img {
     filter: grayscale(0%); /* Remove grayscale on hover */
 }
 
+.button-text {
+    text-align: center; /* Center text */
+}
+
 /* Media Queries */
 @media (max-width: 600px) {
     .button {
-        height: 30px; /* Reduced height for mobile */
-        padding: 2px 0; /* Minimal padding for mobile */
-        font-size: 14px; /* Smaller font size for mobile */
+        height: 30px; /* Reduced height */
+        padding: 2px 0; /* Minimal padding */
+        font-size: 14px; /* Smaller font size */
     }
 
     .button img {
-        width: 18px; /* Smaller icon size for mobile */
-        height: 18px; /* Smaller icon size for mobile */
+        width: 18px; /* Smaller icon size */
+        height: 18px;
     }
 
     .profile {
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center; /* Center align items */
-        text-align: center; /* Center align text */
+        flex-direction: column; /* Stack vertically */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
     }
 
     .profile img {
-        margin: 0; /* Remove margins for better alignment */
+        margin: 0; /* Remove margins */
     }
 
     .profile div {
@@ -132,22 +133,21 @@ body {
     }
 
     .subheading {
-        font-size: 16px; /* Smaller font size for mobile */
-        margin: 0; /* Remove left and right margins for better alignment */
+        font-size: 16px; /* Smaller font size */
+        margin: 0; /* Remove margins */
     }
 }
 
 @media (max-width: 900px) {
     .bio {
-        font-size: 1em; /* Consistent font size for this range */
-        text-align: justify; /* Maintain default text alignment */
-        margin: 5% 0; /* Reduced margin for mobile */
+        font-size: 1em; /* Consistent font size */
+        margin: 5% 0; /* Reduced margin */
     }
 
     .button {
-        flex: 1 0 calc(1% - 10px); /* Adjust for better spacing on medium screens */
-        height: 3em; /* Reduced height for mobile */
-        padding: 5px; /* Minimal padding for mobile */
-        font-size: 1.1em; /* Smaller font size for mobile */
+        flex: 1 0 calc(1% - 10px); /* Adjust for spacing */
+        height: 3em; /* Reduced height */
+        padding: 2px; /* Minimal padding */
+        font-size: 1.1em; /* Smaller font size */
     }
 }
