@@ -1,0 +1,153 @@
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #111827; /* Slightly lighter background for contrast */
+    color: #E5E7EB; /* Lighter text color for better readability */
+    margin: 0;
+    padding: 0 15%; /* Uniform side padding */
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #F9FAFB; /* Bright color for headings */
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile img {
+    border-radius: 10%;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.name {
+    font-size: 1.8em; /* Increased name size */
+    font-weight: bold;
+    margin-left: 15px;
+    color: #F9FAFB; /* Bright color for names */
+}
+
+.subheading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    margin-left: 15px;
+    color: #D1D5DB; /* Softer color for subheading */
+}
+
+/* Bio Section */
+.bio {
+    font-size: 1.1em; /* Standard paragraph size */
+    line-height: 1.5; /* Improved readability */
+    margin: 20px 15%;
+    color: #D1D5DB; /* Maintain consistency with subheading color */
+}
+
+/* Button Containers */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Added gap for better spacing */
+    padding: 20px;
+}
+
+/* Buttons */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #E5E7EB; /* Consistent button text color */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+    height: 40px;
+}
+
+.button:hover {
+    background-color: #374151; /* Darker hover effect */
+}
+
+.button img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+}
+
+.button-text {
+    text-align: center; /* Center text */
+}
+
+.button img {
+    filter: grayscale(100%); /* Make images colorless */
+    transition: filter 0.3s; /* Smooth transition for filter */
+}
+
+.button:hover img {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .button {
+        height: 30px; /* Reduced height for mobile */
+        padding: 2px 0; /* Minimal padding for mobile */
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .button img {
+        width: 18px; /* Smaller icon size for mobile */
+        height: 18px; /* Smaller icon size for mobile */
+    }
+
+    .profile {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center align text */
+    }
+
+    .profile img {
+        margin: 0; /* Remove margins for better alignment */
+    }
+
+    .profile div {
+        margin-top: 50px; /* Space between image and text */
+    }
+
+    .subheading {
+        font-size: 16px; /* Smaller font size for mobile */
+        margin: 0; /* Remove left and right margins for better alignment */
+    }
+}
+
+@media (max-width: 900px) {
+    .bio {
+        font-size: 1em; /* Consistent font size for this range */
+        text-align: justify; /* Maintain default text alignment */
+        margin: 5% 0; /* Reduced margin for mobile */
+    }
+
+    .button {
+        flex: 1 0 calc(1% - 10px); /* Adjust for better spacing on medium screens */
+        height: 3em; /* Reduced height for mobile */
+        padding: 5px; /* Minimal padding for mobile */
+        font-size: 1.1em; /* Smaller font size for mobile */
+    }
+}
