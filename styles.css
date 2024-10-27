@@ -190,7 +190,7 @@ body {
 .line-with-dots1::after {
     content: '';
     flex: 0 0 30%;
-    border-bottom: px dotted #9CA3AF; /* Dotted line color */
+    border-bottom: 3px dotted #9CA3AF; /* Dotted line color */
     margin: 0 10px;
     max-width: 30%;
 }
