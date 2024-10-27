@@ -7,7 +7,14 @@ body {
     padding: 1% 5%; /* Side padding */
 }
 
-.title a{ 
+.header {
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between elements */
+    align-items: center; /* Vertically centers items */
+    padding: 0 15%; /* Add some padding */
+}
+
+.title a { 
     text-align: left;
     color: white;
     font-size: 1.5em;
@@ -15,6 +22,45 @@ body {
     font-weight: bold;
     text-decoration: none;
 }
+
+/* Navigation Styles */
+.navbar {
+    position: sticky; /* Stick to the top on scroll */
+    top: 0; /* Positioning */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.navbar.floating {
+    position: fixed; /* Keep it fixed when floating */
+    width: 100%; /* Full width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    background-color: #1F2937; /* Background color */
+}
+
+.nav-list {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal alignment */
+    justify-content: flex-end; /* Align to right by default */
+}
+
+.nav-list li {
+    background-color: #1F2937;
+    padding: 15px;
+    margin: 0 5px; /* Space between items */
+    border-radius: 15px;
+}
+
+.nav-list a {
+    color: #E5E7EB; /* Light text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+.nav-list a:hover {
+    color: #2563EB; /* Change color on hover */
+}
+
 .heading {
     text-align: center;
     font-size: 1.5em;
@@ -115,7 +161,7 @@ body {
 }
 
 /* Line with Dots Sections */
-.line-with-dots1, .line-with-dots2 {
+.line-with-dots1, .line-with-dots2, .line-with-dots3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,7 +170,7 @@ body {
     color: #E5E7EB; /* Text color */
 }
 
-.line-with-dots1 .dot, .line-with-dots2 .dot {
+.line-with-dots1 .dot, .line-with-dots2 .dot, .line-with-dots3 .dot {
     width: 10px;
     height: 10px;
     background-color: #2563EB; /* Dot color (blue) */
@@ -132,7 +178,7 @@ body {
     margin: 0 10px;
 }
 
-.line-with-dots1 .text, .line-with-dots2 .text{
+.line-with-dots1 .text, .line-with-dots2 .text, .line-with-dots3 .text {
     position: relative;
     padding: 0 15px;
     font-size: 1.5em;
@@ -141,10 +187,10 @@ body {
 }
 
 .line-with-dots1::before,
-.line-with-dots1::after{
+.line-with-dots1::after {
     content: '';
     flex: 0 0 30%;
-    border-bottom: 3px dotted #9CA3AF; /* Dotted line color */
+    border-bottom: px dotted #9CA3AF; /* Dotted line color */
     margin: 0 10px;
     max-width: 30%;
 }
@@ -158,8 +204,20 @@ body {
     max-width: 30%;
 }
 
+.line-with-dots3::before,
+.line-with-dots3::after {
+    content: '';
+    flex: 0 0 29.5%;
+    border-bottom: 3px dotted #9CA3AF; /* Dotted line color */
+    margin: 0 10px;
+    max-width: 30%;
+}
+
 /* Media Queries */
 @media (max-width: 600px) {
+    .heading{
+        font-size: large;
+    }
     .button {
         height: 30px; /* Reduced height */
         padding: 2px 0; /* Minimal padding */
@@ -189,6 +247,74 @@ body {
         font-size: 16px; /* Smaller font size */
         margin: 0; /* Remove margins */
     }
+
+    .nav-list {
+        position: fixed; /* Fix it to the bottom */
+        bottom: 0; /* Position it at the bottom */
+        left: 0;
+        margin: 0;
+        justify-content: center; /* Center the items */
+        font-size: 14px; /* Adjust font size */
+        background-color: #1F2937;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.377);
+        width: 100%; /* Ensure full width */
+        padding: 1% 1%;
+    }
+    
+    .nav-list li {
+        flex: 1; /* Allow equal growth */
+        padding: 12px 0; /* Adjust padding for touch targets */
+        text-align: center; /* Center text */
+        white-space: nowrap; /* Prevent text from wrapping */
+        background-color: #1f293700;
+    }
+    
+    .nav-list a {
+        color: #E5E7EB; /* Light text color */
+        text-decoration: none; /* Remove underline */
+        font-weight: bold; /* Bold text */
+        display: block; /* Make link fill the entire li */
+        padding: 10px; /* Padding for touch targets */
+        
+    }
+
+
+    @media (max-width: 600px) {
+        .line-with-dots1,
+        .line-with-dots2,
+        .line-with-dots3 {
+            align-items: center; /* Center align items */
+            margin: 5px 0; /* Adjust margins for better spacing */
+        }
+    
+        .line-with-dots1 .dot,
+        .line-with-dots2 .dot,
+        .line-with-dots3 .dot {
+            width: 5px; /* Reduce dot size */
+            height: 5px; /* Reduce dot size */
+            margin: 0 10px; /* Adjust margin between dots */
+        }
+    
+        .line-with-dots1 .text,
+        .line-with-dots2 .text,
+        .line-with-dots3 .text {
+            padding: 5px; /* Reduce padding for better fit */
+            font-size: 1.2em; /* Adjust font size for readability */
+        }
+    
+        .line-with-dots1::before,
+        .line-with-dots1::after,
+        .line-with-dots2::before,
+        .line-with-dots2::after,
+        .line-with-dots3::before,
+        .line-with-dots3::after {
+            max-width: 20%; /* Ensure lines do not exceed screen width */
+            margin: 0 2%; /* Add horizontal margins */
+            border-bottom: 3px dotted #9CA3AF; /* Thinner dotted lines */
+        }
+    }
+    
+
 }
 
 @media (max-width: 900px) {
