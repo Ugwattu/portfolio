@@ -1,0 +1,206 @@
+/* Global Styles */
+body {
+    font-family: 'Lato-bold', sans-serif;
+    background-color: #111827; /* Dark background for contrast */
+    color: #E5E7EB; /* Light text for readability */
+    margin: 0;
+    padding: 1% 5%; /* Side padding */
+}
+
+.title a{ 
+    text-align: left;
+    color: white;
+    font-size: 1.5em;
+    padding: 0 15%;
+    font-weight: bold;
+    text-decoration: none;
+}
+.heading {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #F9FAFB; /* Bright headings */
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile img {
+    border-radius: 10%;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.name {
+    font-size: 1.8em; /* Increased name size */
+    font-weight: bold;
+    margin-left: 15px;
+    color: #F9FAFB; /* Bright names */
+}
+
+.subheading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    margin-left: 15px;
+    color: #D1D5DB; /* Softer subheading color */
+    max-width: 17em;
+}
+
+/* Bio Section */
+.bio {
+    font-size: 1em; /* Standard paragraph size */
+    line-height: 1.5; /* Improved readability */
+    margin: 20px 15%;
+    text-align: justify;
+    color: #D1D5DB; /* Consistent color */
+    font-weight: 500;
+}
+
+/* Button Containers */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Improved spacing */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 55em;
+}
+
+/* Buttons */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #E5E7EB; /* Button text color */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+    height: 40px;
+}
+
+.button:hover {
+    background-color: #374151; /* Darker hover effect */
+}
+
+.button img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    filter: grayscale(100%); /* Grayscale by default */
+    transition: filter 0.3s; /* Smooth filter transition */
+}
+
+.button:hover img {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+}
+
+.button-text {
+    text-align: center; /* Center text */
+}
+
+/* Line with Dots Sections */
+.line-with-dots1, .line-with-dots2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+    color: #E5E7EB; /* Text color */
+}
+
+.line-with-dots1 .dot, .line-with-dots2 .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #2563EB; /* Dot color (blue) */
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.line-with-dots1 .text, .line-with-dots2 .text{
+    position: relative;
+    padding: 0 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.line-with-dots1::before,
+.line-with-dots1::after{
+    content: '';
+    flex: 0 0 30%;
+    border-bottom: 3px dotted #9CA3AF; /* Dotted line color */
+    margin: 0 10px;
+    max-width: 30%;
+}
+
+.line-with-dots2::before,
+.line-with-dots2::after {
+    content: '';
+    flex: 0 0 27%;
+    border-bottom: 3px dotted #9CA3AF; /* Dotted line color */
+    margin: 0 10px;
+    max-width: 30%;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .button {
+        height: 30px; /* Reduced height */
+        padding: 2px 0; /* Minimal padding */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .button img {
+        width: 18px; /* Smaller icon size */
+        height: 18px;
+    }
+
+    .profile {
+        flex-direction: column; /* Stack vertically */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+    }
+
+    .profile img {
+        margin: 0; /* Remove margins */
+    }
+
+    .profile div {
+        margin-top: 50px; /* Space between image and text */
+    }
+
+    .subheading {
+        font-size: 16px; /* Smaller font size */
+        margin: 0; /* Remove margins */
+    }
+}
+
+@media (max-width: 900px) {
+    .bio {
+        font-size: 1em; /* Consistent font size */
+        margin: 5% 0; /* Reduced margin */
+    }
+
+    .button {
+        flex: 1 0 calc(1% - 10px); /* Adjust for spacing */
+        height: 3em; /* Reduced height */
+        padding: 2px; /* Minimal padding */
+        font-size: 1.1em; /* Smaller font size */
+    }
+}
