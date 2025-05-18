@@ -1,59 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" id="theme-link">
 </head>
 
 <body>
+  
+    <div class="navbar">
+      <ul class="nav-list">
+        <li><a href="#home"><img src="https://img.icons8.com/?size=100&id=i6fZC6wuprSu&format=png&color=FFFFFF" alt="Home"></a></li>
+        <li><a href="#about-me"><img src="https://img.icons8.com/?size=100&id=2oRq7VXjDba7&format=png&color=FFFFFF" alt="About me"></a></li>
+          <li><a href="#support-projects"><img src="https://img.icons8.com/?size=100&id=kb6L5Ue8loYL&format=png&color=FFFFFF" alt="Support Projects"></a></li>
+          <li><a href="#connect"><img src="https://img.icons8.com/?size=100&id=HqLL9HErvEmn&format=png&color=FFFFFF"alt="Connect"></a></li>
+      </ul>
+    </div>
 
-  <div class="header">
-  <div class="title">
-    <a href="https://ugwattu.github.io/portfolio/" target="_blank">Portfolio</a>
-  </div>
-
-  <nav class="navbar">
-    <ul class="nav-list">
-      <li><a href="#about-me">About me</a></li>
-        <li><a href="#connect">Connect</a></li>
-        <li><a href="#support-projects">Support Projects</a></li>
-    </ul>
-</nav>
-</div>
+      <div class="title" id="home">
+          <a href="https://ugwattu.github.io/portfolio/" target="_blank" id="portfolio-title">Portfolio</a>
+      </div>
 
   <div class="profile">
     <img src="Profile Picture.png" alt="Profile Picture">
-    <div>
+    <div class="profile-background">
       <span class="name">Umair Ghafoor</span>
-      <h2 class="subheading">BS Information Technology Student Part-time at Punjab Group of Colleges</h2>
+      <h2 class="subheading">BS Information Technology Student <br>Part-time at Punjab Group of Colleges</h2>
     </div>
   </div>
 
   <div class="heading" id="about-me">
-    <div class="line-with-dots3">
-      <span class="dot"></span>
       <span>About me</span>
-      <span class="dot"></span>
     </div>
-  </div>
 
   <p class="bio">Hello, I am pursuing a BS in Information Technology from the Virtual University of Pakistan. I am
     excited to work part-time with the Punjab Group of Colleges, Mandi Bahauddin. My experience on various projects has
     enhanced my technical skills and broadened my knowledge. In my free time, I enjoy honing my digital design skills
     and am passionate about reducing carbon footprints and supporting the open-source community.</p>
-
-    <div class="heading" id="connect">
-      <div class="line-with-dots1">
-        <span class="dot"></span>
-        <span>Connect</span>
-        <span class="dot"></span>
-      </div>
-    </div>
-    
 
   <div class="button-container">
     <a href="mailto:umair.ghafoor06@gmail.com" class="button" target="_blank">
@@ -74,12 +61,33 @@
     </a>
   </div>
 
-  <div class="heading" id="support-projects">
-    <div class= "line-with-dots2">
-      <span class="dot"></span>
-    <span>Support Projects</span>
-    <span class="dot"></span>
+  <div class="heading" id="skills">
+    <span>Skills</span>
+  </div>
 
+  <div class="button-skills">
+    <a href="https://www.java.com/en/" class="button-skill" target="_blank">
+      <img src="https://raw.githubusercontent.com/danielcranney/profileme-dev/cff62ea3adea4abef04f582b8321d6e8495d97e8/public/icons/skills/java-colored.svg" alt="Java Icon">
+    </a>
+    <a href="https://kotlinlang.org/" class="button-skill" target="_blank">
+      <img src="https://raw.githubusercontent.com/danielcranney/profileme-dev/cff62ea3adea4abef04f582b8321d6e8495d97e8/public/icons/skills/kotlin-colored.svg" alt="Kotlin Icon">
+    </a>
+    <a href="https://material.io/" class="button-skill" target="_blank">
+      <img src="https://avatars.githubusercontent.com/u/19478152?s=200&v=4" alt="MaterialUI Icon">
+    </a>
+    <a href="https://sqlite.org/index.html" class="button-skill" target="_blank">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/sqlite/sqlite-original.svg" alt="sqlite Icon">
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" class="button-skill" target="_blank">
+      <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" alt="html Icon">
+    </a>
+    <a href="https://www.w3.org/TR/CSS/#css" class="button-skill" target="_blank">
+      <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" alt="html Icon">
+    </a>
+  </div>
+
+  <div class="heading" id="support-projects">
+    <span>Support these Projects</span>
     </div>
   </div>
 
@@ -117,7 +125,7 @@
         <span class="button-text">Proton</span>
       </a>
       <a href="https://signal.org/" class="button" target="_blank">
-        <img src="https://signal.org/brand/assets/logo_blue.png" alt="Signal Icon">
+        <img src="https://avatars.githubusercontent.com/u/702459?s=200&v=4" alt="Signal Icon">
         <span class="button-text">Signal</span>
       </a>
       <a href="https://www.mozilla.org/en-US/firefox/new/" class="button" target="_blank">
@@ -137,7 +145,7 @@
         <span class="button-text">FxSound</span>
       </a>
       <a href="https://github.com/uBlockOrigin/uBOL-home" class="button" target="_blank">
-        <img src="https://github.com/uBlockOrigin/uBOL-home/blob/main/chromium/img/icon_128.png?raw=true" alt="uBlock Lite Icon">
+        <img src="https://raw.githubusercontent.com/uBlockOrigin/uBOL-home/f673edb743aa25ca9d23c52dc1e37d5b6b8744a8/firefox/img/ublock.svg" alt="uBlock Lite Icon">
         <span class="button-text">uBlock Lite</span>
       </a>
       <a href="https://obsproject.com/" class="button" target="_blank">
@@ -145,7 +153,7 @@
         <span class="button-text">OBS Studio</span>
       </a>
       <a href="https://atlasos.net/" class="button" target="_blank">
-        <img src="https://docs.atlasos.net/assets/brand/preview/avatars/preview-avatar-v1.png.webp" alt="Atlas Icon">
+        <img src="https://raw.githubusercontent.com/Atlas-OS/branding/52e6b06977447382b44be7666bc048f6a61265d7/icons/official/Icon%20-%20Ice.svg" alt="AtlasIcon">
         <span class="button-text">Atlas OS</span>
       </a>
       <a href="https://guardianproject.info/" class="button" target="_blank">
@@ -156,24 +164,40 @@
         <img src="https://play-lh.googleusercontent.com/8qnlDrFkq1337psFMfAqU40tblRCzWhBm0p9yqa34rxyfxtIkm54_AAGNsaQj4QlTg=w240-h480" alt="SafeCharge Icon">
         <span class="button-text">SafeCharge</span>
       </a>
-      <a href="  https://fmhy.net/" class="button" target="_blank">
+      <a href="https://fmhy.net/" class="button" target="_blank">
         <img src="https://raw.githubusercontent.com/fmhy/edit/refs/heads/main/docs/public/favicon.ico" alt="FMHY Icon">
         <span class="button-text">FMHY</span>
+      </a>
+      <a href="https://www.videolan.org/" class="button" target="_blank">
+        <img src="https://images.videolan.org/images/VLC-IconSmall.png" alt="VLC Icon">
+        <span class="button-text">VLC</span>
+      </a>
+      <a href="https://github.com/jameskokoska/Cashew" class="button" target="_blank">
+        <img src="https://raw.githubusercontent.com/jameskokoska/Cashew/main/promotional/icons/icon.png" alt="Cashew Icon">
+        <span class="button-text">Cashew</span>
       </a>
       <a href=" " class="button" target="_blank">
         <img src="https://img.icons8.com/?size=100&id=xUZFxyDjBQbR&format=png&color=FFFFFF" alt="Coming Soon Icon">
         <span class="button-text">Coming Soon....</span>
       </a>
     </div>
+   
+   <div class="heading" id="connect">
+    <span>Connect</span>
+  </div>
 
-   </div>
+   <section class="contact-section">
+    <form class="contact-form" action="https://formsubmit.co/umair.ghafoor06@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+  
 
-
-
-   <!-- particles.js container -->
-<div id="particles-js"></div> <!-- stats - count particles -->
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="script.js"></script>
 
 
