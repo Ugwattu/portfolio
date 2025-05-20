@@ -377,7 +377,6 @@ body {
   }
 
   .nav-list li {
-    flex: 1;
     height: 100%;
     width: 75%;
     display: flex;
