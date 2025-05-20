@@ -383,14 +383,14 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 5%;
-    margin: 0 25%;
+    margin: 0;
     padding: 0;
     background-color: transparent;
     box-shadow: none;
   }
 
   .nav-list a {
-    width: 100%;
+    width: 75%;
     height: 100%;
     display: flex;
     justify-content: center;
