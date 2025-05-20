@@ -389,10 +389,12 @@ body {
     box-shadow: none;
   }
 
-    /* Highlight selected item */
-  .nav-list a:active,
-  .nav-list a:focus {
-    border-radius: 5%; /* Keep square corners */
+    /* Highlight selected item */  
+  .nav-list a:active, /* When item is clicked */
+  .nav-list a:focus { /* When item is focused */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5%;
+    margin: 10%;
   }
   
 
