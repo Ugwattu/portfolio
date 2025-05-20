@@ -390,10 +390,9 @@ body {
   }
 
     /* Highlight selected item */
-  .nav-list a.selected {
-      background-color: #ff6363; /* Your selected background color */
-      border-radius: 15px; /* Optional for rounded corners */
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Optional box shadow for emphasis */
+  .nav-list a:active,
+  .nav-list a:focus {
+    border-radius: 5%; /* Keep square corners */
   }
   
 
