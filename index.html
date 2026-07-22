@@ -1,273 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css?v2.0" id="theme-link">
+  <title>Umair Ghafoor — Aspiring Cybersecurity Analyst &amp; Mobile Developer</title>
+  <meta name="description" content="Portfolio of Umair Ghafoor - an IT guy building Android apps and browser tools, currently expanding into Flutter and cybersecurity.">
+
+  <meta property="og:title" content="Umair Ghafoor - Portfolio">
+  <meta property="og:description" content="IT student building Android apps and browser tools, currently expanding into Flutter and cybersecurity.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="profile.jpeg">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='16'%20fill='%230F2847'/%3E%3Ctext%20x='50'%20y='67'%20font-size='42'%20font-family='monospace'%20font-weight='700'%20fill='%23FF7A45'%20text-anchor='middle'%3EUG%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Umair Ghafoor",
+    "url": "https://ugwattu.github.io/portfolio/",
+    "sameAs": ["https://github.com/Ugwattu", "https://x.com/UmairGWattu", "https://instagram.com/umairghafoorwattu"],
+    "jobTitle": "Aspiring Cybersecurity Analyst & Mobile App Developer"
+  }
+  </script>
 </head>
-
 <body>
-  
-    <div class="navbar">
-      <ul class="nav-list">
-        <li><a href="#home"><img src="https://img.icons8.com/?size=100&id=i6fZC6wuprSu&format=png&color=FFFFFF" alt="Home"></a></li>
-        <li><a href="#about-me"><img src="https://img.icons8.com/?size=100&id=2oRq7VXjDba7&format=png&color=FFFFFF" alt="About me"></a></li>
-          <li><a href="#support-projects"><img src="https://img.icons8.com/?size=100&id=kb6L5Ue8loYL&format=png&color=FFFFFF" alt="Support Projects"></a></li>
-          <li><a href="#connect"><img src="https://img.icons8.com/?size=100&id=HqLL9HErvEmn&format=png&color=FFFFFF"alt="Connect"></a></li>
-      </ul>
-    </div>
 
-      <div class="title" id="home">
-          <a href="https://ugwattu.github.io/portfolio/" target="_blank" id="portfolio-title">Portfolio</a>
+<div class="grid-overlay"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo"><span class="bracket">[</span>UG<span class="bracket">]</span></a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#tools" class="nav-link">Tools</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8l1.8-1.8M18 6l1.8-1.8"></path></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 14.7A8.6 8.6 0 0 1 9.3 3.2 9.3 9.3 0 1 0 20.8 14.7z"></path></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-content reveal">
+      <div class="status-pill"><span class="status-dot"></span>Open to cybersecurity collaboration</div>
+      <p class="eyebrow">Portfolio / Index</p>
+      <h1>Umair Ghafoor</h1>
+      <p class="hero-role">Aspiring Cybersecurity Analyst &amp; Mobile App Developer</p>
+      <p class="hero-desc">Building Android apps and browser tools — currently expanding into Flutter and security research.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
+      <div class="social-row">
+        <a href="mailto:umair.ghafoor06@gmail.com" class="icon-btn" aria-label="Email Umair">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+        <a href="https://github.com/Ugwattu" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.7-1.4-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.6 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"></path></svg>
+        </a>
+        <a href="https://x.com/UmairGWattu" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.6h3.7l-8 9.2 9.5 12.6h-7.4l-5.8-7.6-6.6 7.6H.6l8.6-9.9L0 1.6h7.6l5.2 7 6.1-7zm-1.3 19.5h2L6.5 3.8h-2.2l13.3 17.3z"></path></svg>
+        </a>
+        <a href="https://instagram.com/umairghafoorwattu" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"></circle></svg>
+        </a>
+      </div>
+    </div>
 
-  <div class="profile">
-    <img src="Profile Picture.png" alt="Profile Picture">
-    <div class="profile-background">
-      <span class="name">Umair Ghafoor</span>
-      <h2 class="subheading">Future Cybersecurity Analyst</h2>
+    <div class="hero-visual reveal">
+      <div class="photo-frame bracket-frame">
+        <span class="corner corner-tl"></span><span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span><span class="corner corner-br"></span>
+        <div class="photo-inner">
+          <img src="profile.jpeg" alt="Umair Ghafoor" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-family:var(--font-mono);color:var(--text-dim);font-size:3rem;\'>UG</div>'">
+        </div>
+        <div class="photo-tag">UMAIR_GHAFOOR.png</div>
+      </div>
     </div>
   </div>
+</header>
 
-  <div class="heading" id="about-me">
-      <span>About me</span>
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-text reveal">
+      <p class="eyebrow">About</p>
+      <h2>Building things, then learning what breaks</h2>
+      <p>I'm currently working at Punjab Group of Colleges in Mandi Bahauddin. Most of what I know I've picked up by building, turning coursework and tutorials into working apps rather than letting them stay theoretical.</p>
+      <p>My most recent project is a full Android app for parent school communication, built as my final-year project. Alongside that, I maintain a YouTube interface extension that's live on Firefox Add-ons, and I'm now picking up Flutter for what's next. Outside of code, I care about the open-source community and cutting down my own carbon footprint.</p>
     </div>
-
-  <p class="bio">Hello, I am learning Cybersecurity from different platforms and using the knowledge I gain from these platforms, 
-    I implement on personal projects. I am excited to working at Punjab Group of Colleges, Mandi Bahauddin. 
-    My experience on various projects has enhanced my technical skills and broadened my knowledge. In my free time, I am passionate 
-    about reducing carbon footprints and supporting the open-source community.</p>
-
-  <div class="button-container">
-    <a href="mailto:umair.ghafoor06@gmail.com" class="button" target="_blank">
-      <img src="https://img.icons8.com/?size=100&id=85467&format=png&color=FFFFFF" alt="Mail Icon">
-      <span class="button-text">Mail Me</span>
-    </a>
-    <a href="https://github.com/Ugwattu" class="button" target="_blank">
-      <img src="https://img.icons8.com/?size=100&id=106562&format=png&color=FFFFFF" alt="github Icon">
-      <span class="button-text">Github</span>
-    </a>
-    <a href="https://x.com/UmairGWattu" class="button" target="_blank">
-      <img src="https://img.icons8.com/?size=100&id=de4vjQ6J061l&format=png&color=FFFFFF" alt="Twitter Icon">
-      <span class="button-text">Twitter</span>
-    </a>
-    <a href="https://instagram.com/umairghafoorwattu" class="button" target="_blank">
-      <img src="https://img.icons8.com/?size=100&id=85154&format=png&color=FFFFFF" alt="Instagram Icon">
-      <span class="button-text">Instagram</span>
-    </a>
-  </div>
-
-  <div class="heading" id="skills">
-    <span>Skills</span>
-  </div>
-
-  <div class="button-skills">
-    <a href="https://www.java.com/en/" class="button-skill" target="_blank">
-      <img src="https://raw.githubusercontent.com/danielcranney/profileme-dev/cff62ea3adea4abef04f582b8321d6e8495d97e8/public/icons/skills/java-colored.svg" alt="Java Icon">
-    </a>
-    <a href="https://kotlinlang.org/" class="button-skill" target="_blank">
-      <img src="https://raw.githubusercontent.com/danielcranney/profileme-dev/cff62ea3adea4abef04f582b8321d6e8495d97e8/public/icons/skills/kotlin-colored.svg" alt="Kotlin Icon">
-    </a>
-    <a href="https://material.io/" class="button-skill" target="_blank">
-      <img src="https://avatars.githubusercontent.com/u/19478152?s=200&v=4" alt="MaterialUI Icon">
-    </a>
-    <a href="https://sqlite.org/index.html" class="button-skill" target="_blank">
-      <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/sqlite/sqlite-original.svg" alt="sqlite Icon">
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" class="button-skill" target="_blank">
-      <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" alt="html Icon">
-    </a>
-    <a href="https://www.w3.org/TR/CSS/#css" class="button-skill" target="_blank">
-      <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" alt="html Icon">
-    </a>
-  </div>
-
-  <div class="heading" id="support-projects">
-    <span>Support these Projects</span>
+    <div class="spec-card reveal">
+      <div class="spec-card-header"><span>SPEC_SHEET</span><span>v2026</span></div>
+      <dl>
+        <div class="spec-row"><dt>Education</dt><dd>BS Information Technology - Virtual University of Pakistan</dd></div>
+        <div class="spec-row"><dt>Role</dt><dd>Lecturer - Punjab Group of Colleges (Mandi Bahauddin)</dd></div>
+        <div class="spec-row"><dt>Building</dt><dd>Darzi - a Flutter app for tailors</dd></div>
+        <div class="spec-row"><dt>Learning</dt><dd>Flutter</dd></div>
+        <div class="spec-row"><dt>Open to</dt><dd>Cybersecurity collaboration</dd></div>
+      </dl>
     </div>
   </div>
+</section>
 
-    <div class="button-container">
-      <a href="https://spikehd.github.io/projects/dorion/" class="button" target="_blank">
-        <img src="https://raw.githubusercontent.com/SpikeHD/Dorion/main/src-tauri/icons/icon.png" alt="Dorion Icon">
-        <span class="button-text">Dorion</span>
+<section class="section alt" id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Skills</p>
+      <h2>Toolbox</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-cat reveal">
+        <h3>Languages</h3>
+        <div class="chip-list">
+          <div class="chip"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" alt="" onerror="this.style.visibility='hidden'"><span>Java</span></div>
+          <div class="chip"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/kotlin-colored.svg" alt="" onerror="this.style.visibility='hidden'"><span>Kotlin</span></div>
+        </div>
+      </div>
+      <div class="skill-cat reveal">
+        <h3>Web &amp; UI</h3>
+        <div class="chip-list">
+          <div class="chip"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" alt="" onerror="this.style.visibility='hidden'"><span>HTML5</span></div>
+          <div class="chip"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" alt="" onerror="this.style.visibility='hidden'"><span>CSS3</span></div>
+          <div class="chip"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/materialui-colored.svg" alt="" onerror="this.style.visibility='hidden'"><span>Material Design</span></div>
+        </div>
+      </div>
+      <div class="skill-cat reveal">
+        <h3>Data</h3>
+        <div class="chip-list">
+          <div class="chip"><img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/sqlite/sqlite-original.svg" alt="" onerror="this.style.visibility='hidden'"><span>SQLite</span></div>
+          <div class="chip"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" alt="" onerror="this.style.visibility='hidden'"><span>MySQL</span></div>
+        </div>
+      </div>
+      <div class="skill-cat reveal">
+        <h3>Tools</h3>
+        <div class="chip-list">
+          <div class="chip"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode.svg" alt="" onerror="this.style.visibility='hidden'"><span>VS Code</span></div>
+          <div class="chip"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg" alt="" onerror="this.style.visibility='hidden'"><span>Photoshop</span></div>
+          <div class="chip"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/illustrator-colored.svg" alt="" onerror="this.style.visibility='hidden'"><span>Illustrator</span></div>
+          <div class="chip"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/premierepro-colored.svg" alt="" onerror="this.style.visibility='hidden'"><span>Premiere Pro</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Projects</p>
+      <h2>Selected Work</h2>
+      <p>Two shipped builds — a full Android app and a browser extension real people use.</p>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-media bracket-frame">
+        <span class="corner corner-tl"></span><span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span><span class="corner corner-br"></span>
+        <div class="project-media-placeholder">📋</div>
+      </div>
+      <div class="project-body">
+        <span class="project-tag">FIG. 01</span>
+        <h3>Parent Portal App</h3>
+        <p class="project-tagline">Final-year Android project · school-to-parent communication</p>
+        <p class="desc">A full-featured Android app that gives parents real-time visibility into their child's school life:  attendance, grades, fees and more, all in one place. Built end to end for my final year, from the login flow down to the local database.</p>
+        <ul class="feature-list">
+          <li>Attendance, report cards &amp; fee vouchers in one dashboard</li>
+          <li>Digital leave requests and a daily diary of classwork</li>
+          <li>Timetable, syllabus &amp; transport details on demand</li>
+          <li>Two-way feedback between parents and school staff</li>
+          <li>Real-time announcements for events and emergencies</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">Java</span><span class="tech-tag">Android Studio</span>
+          <span class="tech-tag">SQLite</span><span class="tech-tag">Material Design 3</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Ugwattu/parentportalapp-andriod" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-small">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16,18 22,12 16,6"></polyline><polyline points="8,6 2,12 8,18"></polyline></svg>
+            View Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reverse reveal">
+      <div class="project-media">
+        <img src="https://raw.githubusercontent.com/Ugwattu/youtubesidebar/refs/heads/main/images/youtubesidebar.png" alt="YouTube Sidebar extension screenshot" onerror="this.parentElement.innerHTML='<div class=\'project-media-placeholder\'>🎬</div>'">
+      </div>
+      <div class="project-body">
+        <span class="project-tag">FIG. 02</span>
+        <h3>YouTube Sidebar</h3>
+        <p class="project-tagline">Browser extension · published on Firefox Add-ons</p>
+        <p class="desc">YouTube crams comments, related videos, playlists and live chat all below the fold. This extension pulls them into a single tabbed sidebar next to the player, plus an A/B video looper with draggable markers for repeating any section of a video.</p>
+        <ul class="feature-list">
+          <li>Tabbed sidebar for comments, related, playlist &amp; chat</li>
+          <li>Custom A/B loop with drag-and-drop start/end handles</li>
+          <li>Configurable default tab and button styling</li>
+          <li>Built on Manifest V3</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">JavaScript</span><span class="tech-tag">jQuery</span>
+          <span class="tech-tag">Manifest V3</span><span class="tech-tag">CSS</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Ugwattu/youtubesidebar" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-small">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16,18 22,12 16,6"></polyline><polyline points="8,6 2,12 8,18"></polyline></svg>
+            View Code
+          </a>
+          <a href="https://ugwattu.github.io/YouTube-SideBar-website/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-small">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15,3 21,3 21,9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            Get the Extension
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="inprogress-strip reveal">
+      <span class="status-dot-blue"></span>
+      <span>Currently in the workshop: <strong>Darzi</strong> — a Flutter app for tailors, in progress.</span>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="tools">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Open Source</p>
+      <h2>Tools I Recommend</h2>
+      <p>Software built by others that I rely on daily. Give these projects a star or a try.</p>
+    </div>
+    <div class="filter-tabs reveal" id="filterTabs">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="sec">Security &amp; Privacy</button>
+      <button class="filter-tab" data-filter="dev">Dev &amp; System</button>
+      <button class="filter-tab" data-filter="prod">Productivity</button>
+      <button class="filter-tab" data-filter="media">Media &amp; Comms</button>
+    </div>
+    <div class="tools-grid reveal" id="toolsGrid"></div>
+    <p class="tools-note">// more added as I find them</p>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's build something</h2>
+      <p class="desc">Open to cybersecurity collaboration, mobile dev work, or just talking shop about open source. Reach out any of these ways.</p>
+      <a href="mailto:umair.ghafoor06@gmail.com" class="contact-link">
+        <span class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span>
+        umair.ghafoor06@gmail.com
       </a>
-      <a href="https://github.com/mostafaalagamy/metrolist" class="button" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/260068764?s=200&v=4" alt="Metrolist Logo">
-        <span class="button-text">Metrolist</span>
+      <a href="https://github.com/Ugwattu" target="_blank" rel="noopener noreferrer" class="contact-link">
+        <span class="icon-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.7-1.4-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.6 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"></path></svg></span>
+        github.com/Ugwattu
       </a>
-      <a href="https://www.truenas.com/" class="button" target="_blank">
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.osboxes.org%2Fwp-content%2Fuploads%2F2022%2F02%2Ftruenas-logo.png&f=1&nofb=1" alt="TrueNAS Icon">
-        <span class="button-text">TrueNAS</span>
+      <a href="https://x.com/UmairGWattu" target="_blank" rel="noopener noreferrer" class="contact-link">
+        <span class="icon-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.6h3.7l-8 9.2 9.5 12.6h-7.4l-5.8-7.6-6.6 7.6H.6l8.6-9.9L0 1.6h7.6l5.2 7 6.1-7zm-1.3 19.5h2L6.5 3.8h-2.2l13.3 17.3z"></path></svg></span>
+        x.com/UmairGWattu
       </a>
-      <a href="https://futo.tech/" class="button" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/129423434?s=200&v=4" alt="Futo Icon">
-        <span class="button-text">Futo</span>
-      </a>
-      <a href="https://www.kde.org/" class="button" target="_blank">
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fkde.org%2Fstuff%2Fclipart%2Flogo%2Fkde-logo-blue-transparent-3000x3000.png&f=1&nofb=1" alt="KDE Icon">
-        <span class="button-text">KDE</span>
-      </a>
-      <a href="https://stripe.com/" class="button" target="_blank">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGluJhW7I1NYU7jF77E-9K9I46_ib_DUNHw&s" alt="Stripe Icon">
-        <span class="button-text">Stripe</span>
-      </a>
-      <a href="https://bitwarden.com/" class="button" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/15990069?s=200&v=4" alt="Bitwarden Icon">
-        <span class="button-text">Bitwarden</span>
-      </a>
-      <a href="https://proton.me/" class="button" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/6953970?s=200&v=4" alt="Proton Icon">
-        <span class="button-text">Proton</span>
-      </a>
-      <a href="https://signal.org/" class="button" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/702459?s=200&v=4" alt="Signal Icon">
-        <span class="button-text">Signal</span>
-      </a>
-      <a href="https://www.mozilla.org/en-US/firefox/new/" class="button" target="_blank">
-        <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/logo.fedb52c912d6.svg" alt="Firefox Icon">
-        <span class="button-text">Firefox</span>
-      </a>
-      <a href="https://www.7-zip.org/" class="button" target="_blank">
-        <img src="https://www.7-zip.org/7ziplogo.png" alt="7zip Icon">
-        <span class="button-text">7-Zip</span>
-      </a>
-      <a href="https://github.com/gorhill/uBlock" class="button" target="_blank">
-        <img src="https://raw.githubusercontent.com/gorhill/uBlock/master/src/img/ublock.svg" alt="uBlock Origin Icon">
-        <span class="button-text">uBlock Origin</span>
-      </a>
-      <a href="https://www.fxsound.com/" class="button" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/103012411?s=200&v=4" alt="FxSound Icon">
-        <span class="button-text">FxSound</span>
-      </a>
-      <a href="https://obsproject.com/" class="button" target="_blank">
-        <img src="https://obsproject.com/assets/images/new_icon_small-r.png" alt="OBS Icon">
-        <span class="button-text">OBS Studio</span>
-      </a>
-      <a href="https://guardianproject.info/" class="button" target="_blank">
-        <img src="https://guardianproject.info/GP_Logo_hires.png" alt="Guardian Project Icon">
-        <span class="button-text">GuardianProject</span>
-      </a>
-      <a href="https://play.google.com/store/apps/details?id=com.onesilicondiode.batterywise&hl=en" class="button" target="_blank">
-        <img src="https://play-lh.googleusercontent.com/8qnlDrFkq1337psFMfAqU40tblRCzWhBm0p9yqa34rxyfxtIkm54_AAGNsaQj4QlTg=w240-h480" alt="SafeCharge Icon">
-        <span class="button-text">SafeCharge</span>
-      </a>
-      <a href="https://fmhy.net/" class="button" target="_blank">
-        <img src="https://raw.githubusercontent.com/fmhy/edit/refs/heads/main/docs/public/favicon.ico" alt="FMHY Icon">
-        <span class="button-text">FMHY</span>
-      </a>
-      <a href="https://www.videolan.org/" class="button" target="_blank">
-        <img src="https://images.videolan.org/images/VLC-IconSmall.png" alt="VLC Icon">
-        <span class="button-text">VLC</span>
-      </a>
-      <a href="https://github.com/jameskokoska/Cashew" class="button" target="_blank">
-        <img src="https://raw.githubusercontent.com/jameskokoska/Cashew/main/promotional/icons/icon.png" alt="Cashew Icon">
-        <span class="button-text">Cashew</span>
-      </a>
-      <a href="https://github.com/yuliskov/SmartTube" class="button" target="_blank">
-        <img src="https://raw.githubusercontent.com/yuliskov/SmartTube/refs/heads/master/images/app_icon.png" alt="SmartTube Icon">
-        <span class="button-text">SmartTube</span>
-      </a>
-      <a href="https://www.onlyoffice.com/" class="button" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/1426033?s=200&v=4" alt="OnlyOffice Icon">
-        <span class="button-text">OnlyOffice</span>
-      </a>
-      <a href="https://github.com/Akylas/OSS-DocumentScanner" class="button" target="_blank">
-        <img src="https://raw.githubusercontent.com/Akylas/OSS-DocumentScanner/refs/heads/main/fastlane/metadata/com.akylas.documentscanner/android/en-US/images/icon.png" alt="OSS Icon">
-        <span class="button-text">OSS Scanner</span>
-      </a>
-      <a href="https://www.localcdn.org/" class="button" target="_blank">
-        <img src="https://www.localcdn.org/img/logo-protected.svg" alt="Localcdn Icon">
-        <span class="button-text">Localcdn</span>
-      </a>
-      <a href="https://cryptomator.org/" class="button" target="_blank">
-        <img src="https://cryptomator.org/img/logo.svg" alt="Cryptomator Icon">
-        <span class="button-text">Cryptomator</span>
-      </a>
-      <a href="https://vscodium.com/" class="button" target="_blank">
-        <img src="https://vscodium.com/img/codium_cnl.svg" alt="VSCodium Icon">
-        <span class="button-text">VS Codium</span>
-      </a>
-      <a href="https://abdownloadmanager.com/" class="button" target="_blank">
-        <img src="https://raw.githubusercontent.com/amir1376/ab-download-manager/master/assets/logo/app_logo_with_background.svg" alt="AB Download Manager Icon">
-        <span class="button-text">AB Download Manager</span>
-      </a>
-      <a href="https://www.ventoy.net/" class="button" target="_blank">
-        <img src="https://www.ventoy.net/static/img/ventoy.png?v=1" alt="Ventoy Icon">
-        <span class="button-text">Ventoy</span>
-      </a>
-      <a href="https://amelabs.net/" class="button" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/131649633?s=200&v=4" alt="AME Labs Icon">
-        <span class="button-text">AME Labs</span>
-      </a>
-      <a href="https://adguard.com/" class="button" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/8361145?s=200&v=4" alt="Adguard Icon">
-        <span class="button-text">Adguard</span>
-      </a>
-      <a href="https://bentopdf.com/" class="button" target="_blank">
-        <img src="https://raw.githubusercontent.com/alam00000/bentopdf/refs/heads/main/public/images/favicon.png" alt="BentoPDF Icon">
-        <span class="button-text">BentoPDF</span>
-      </a>
-      <a href="https://localsend.org/" class="button" target="_blank">
-        <img src="https://raw.githubusercontent.com/localsend/localsend/refs/heads/main/app/assets/img/logo-128.png" alt="LocalSend Icon">
-        <span class="button-text">LocalSend</span>
-      </a>
-      <a href="https://github.com/Teskann/QuaX" class="button" target="_blank">
-        <img src="https://raw.githubusercontent.com/Teskann/QuaX/refs/heads/master/assets/readme/icon.png" alt="QuaX Icon">
-        <span class="button-text">QuaX</span>
-      </a>
-      <a href="https://www.photopea.com/" class="button" target="_blank">
-        <img src="https://www.vecpea.com/promo/icon512.png" alt="Photopea Icon">
-        <span class="button-text">Photopea</span>
-      </a>
-      <a href="https://ffmpeg.org/" class="button" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/729418?s=200&v=4" alt="FFmpeg Icon">
-        <span class="button-text">FFmpeg</span>
-      </a>
-      <a href="https://www.drawio.com/" class="button" target="_blank">
-        <img src="https://www.drawio.com/img/logo.svg" alt="Drawio Icon">
-        <span class="button-text">Drawio</span>
-      </a>
-      <a href=" " class="button" target="_blank">
-        <img src="https://img.icons8.com/?size=100&id=xUZFxyDjBQbR&format=png&color=FFFFFF" alt="Coming Soon Icon">
-        <span class="button-text">Coming Soon....</span>
+      <a href="https://instagram.com/umairghafoorwattu" target="_blank" rel="noopener noreferrer" class="contact-link">
+        <span class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"></circle></svg></span>
+        @umairghafoorwattu
       </a>
     </div>
-   
-   <div class="heading" id="connect">
-    <span>Connect</span>
-  </div>
 
-  
-   <section class="contact-section">
-    <form class="contact-form" id="contact-form">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
+    <form class="contact-form reveal" id="contactForm">
+      <div class="field">
+        <label for="cf-name">Name</label>
+        <input id="cf-name" name="name" type="text" required>
+      </div>
+      <div class="field">
+        <label for="cf-email">Email</label>
+        <input id="cf-email" name="email" type="email" required>
+      </div>
+      <div class="field">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-note">Opens your email client with this filled in — this site has no backend, so nothing sends silently.</p>
     </form>
-  </section>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="title-block">
+      <div class="tb-row"><span class="tb-label">Drawn by</span><span class="tb-value">Umair Ghafoor</span></div>
+      <div class="tb-row"><span class="tb-label">Sheet</span><span class="tb-value">1 / 1</span></div>
+      <div class="tb-row"><span class="tb-label">Rev.</span><span class="tb-value">2026</span></div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-note">© 2026 Umair Ghafoor. Built with care.</p>
+      <a href="#home" class="back-to-top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
