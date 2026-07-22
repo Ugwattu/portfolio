@@ -99,6 +99,7 @@ var tools = [
   { name: "Photopea", url: "https://www.photopea.com/", icon: "https://www.vecpea.com/promo/icon512.png", cat: "prod" },
   { name: "FFmpeg", url: "https://ffmpeg.org/", icon: "https://avatars.githubusercontent.com/u/729418?s=200&v=4", cat: "dev" },
   { name: "Drawio", url: "https://www.drawio.com/", icon: "https://www.drawio.com/img/logo.svg", cat: "prod" }
+  { name: "Ollama", url: "https://ollama.com/", icon: "https://avatars.githubusercontent.com/u/151674099?s=200&v=4", cat: "prod"}
 ];
 
 var toolsGrid = document.getElementById('toolsGrid');
