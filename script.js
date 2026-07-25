@@ -62,7 +62,6 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
   window.location.href = 'mailto:umair.ghafoor06@gmail.com?subject=' + subject + '&body=' + body;
 });
 
-
 // ---------- Tools data + filter ----------
 var tools = [
   { name: "Dorion", url: "https://spikehd.github.io/projects/dorion/", icon: "https://raw.githubusercontent.com/SpikeHD/Dorion/main/src-tauri/icons/icon.png", cat: "media" },
@@ -103,7 +102,8 @@ var tools = [
   { name: "Ollama", url: "https://ollama.com/", icon: "https://avatars.githubusercontent.com/u/151674099?s=200&v=4", cat: "prod" },
   { name: "Aegis Authenticator", url: "https://getaegis.app/", icon: "https://raw.githubusercontent.com/beemdevelopment/Aegis/refs/heads/master/metadata/en-US/images/icon.png", cat: "sec" },
   { name: "Syncthing", url: "https://syncthing.net/", icon: "https://avatars.githubusercontent.com/u/7628018?s=200&v=4", cat: "prod" },
-  { name: "Frigate", url: "https://frigate.video/", icon: "https://raw.githubusercontent.com/blakeblackshear/frigate/a573ea49bffb0a8a6dcd4cc83db01aaf409bd4e6/docs/static/img/branding/logo.svg", cat: "sec" }
+  { name: "Frigate", url: "https://frigate.video/", icon: "https://raw.githubusercontent.com/blakeblackshear/frigate/a573ea49bffb0a8a6dcd4cc83db01aaf409bd4e6/docs/static/img/branding/logo.svg", cat: "sec" },
+  { name: "Ladybird", url: "https://ladybird.org", icon: "https://raw.githubusercontent.com/LadybirdBrowser/ladybird/refs/heads/master/Base/res/icons/128x128/app-browser.png", cat: "sec" }
 ];
 
 var toolsGrid = document.getElementById('toolsGrid');
