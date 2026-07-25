@@ -101,7 +101,8 @@ var tools = [
   { name: "Drawio", url: "https://www.drawio.com/", icon: "https://www.drawio.com/img/logo.svg", cat: "prod" },
   { name: "Ollama", url: "https://ollama.com/", icon: "https://avatars.githubusercontent.com/u/151674099?s=200&v=4", cat: "prod" },
   { name: "Aegis Authenticator", url: "https://getaegis.app/", icon: "https://raw.githubusercontent.com/beemdevelopment/Aegis/refs/heads/master/metadata/en-US/images/icon.png", cat: "sec" },
-  { name: "Syncthing", url: "https://syncthing.net/", icon: "https://avatars.githubusercontent.com/u/7628018?s=200&v=4", cat: "prod" }
+  { name: "Syncthing", url: "https://syncthing.net/", icon: "https://avatars.githubusercontent.com/u/7628018?s=200&v=4", cat: "prod" },
+  { name: "Frigate", url: "https://frigate.video/", icon: "https://raw.githubusercontent.com/blakeblackshear/frigate/a573ea49bffb0a8a6dcd4cc83db01aaf409bd4e6/docs/static/img/branding/logo.svg", cat: "sec" }
 ];
 
 var toolsGrid = document.getElementById('toolsGrid');
