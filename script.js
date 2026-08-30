@@ -105,7 +105,8 @@ var tools = [
   { name: "Frigate", url: "https://frigate.video/", icon: "https://raw.githubusercontent.com/blakeblackshear/frigate/a573ea49bffb0a8a6dcd4cc83db01aaf409bd4e6/docs/static/img/branding/logo.svg", cat: "sec" },
   { name: "Ladybird", url: "https://ladybird.org", icon: "https://raw.githubusercontent.com/LadybirdBrowser/ladybird/refs/heads/master/Base/res/icons/128x128/app-browser.png", cat: "sec" },
   { name: "OpenVPN", url: "https://openvpn.net/", icon: "https://avatars.githubusercontent.com/u/1569141?s=200&v=4", cat: "sec" },
-  { name: "pfSense", url: "https://www.pfsense.org/", icon: "https://avatars.githubusercontent.com/u/3716965?s=200&v=4", cat: "sec" }
+  { name: "pfSense", url: "https://www.pfsense.org/", icon: "https://avatars.githubusercontent.com/u/3716965?s=200&v=4", cat: "sec" },
+  { name: "Audacity", url: "https://audacityteam.org/", icon: "https://www.audacityteam.org/_astro/Audacity_Logo.DK8H7nvr.svg", cat: "media" }
 ];
 
 var toolsGrid = document.getElementById('toolsGrid');
