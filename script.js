@@ -106,7 +106,8 @@ var tools = [
   { name: "Ladybird", url: "https://ladybird.org", icon: "https://raw.githubusercontent.com/LadybirdBrowser/ladybird/refs/heads/master/Base/res/icons/128x128/app-browser.png", cat: "sec" },
   { name: "OpenVPN", url: "https://openvpn.net/", icon: "https://avatars.githubusercontent.com/u/1569141?s=200&v=4", cat: "sec" },
   { name: "pfSense", url: "https://www.pfsense.org/", icon: "https://avatars.githubusercontent.com/u/3716965?s=200&v=4", cat: "sec" },
-  { name: "Audacity", url: "https://audacityteam.org/", icon: "https://www.audacityteam.org/_astro/Audacity_Logo.DK8H7nvr.svg", cat: "media" }
+  { name: "Audacity", url: "https://audacityteam.org/", icon: "https://www.audacityteam.org/_astro/Audacity_Logo.DK8H7nvr.svg", cat: "media" },
+  { name: "Consumer Rights Wiki", url: "https://consumerrights.wiki", icon: "https://consumerrights.wiki/images/logo/new_fixed_logo.png", cat: "sec" }
 ];
 
 var toolsGrid = document.getElementById('toolsGrid');
