@@ -96,7 +96,7 @@ var tools = [
   { name: "BentoPDF", url: "https://bentopdf.com/", icon: "https://raw.githubusercontent.com/alam00000/bentopdf/refs/heads/main/public/images/favicon.png", cat: "prod" },
   { name: "LocalSend", url: "https://localsend.org/", icon: "https://raw.githubusercontent.com/localsend/localsend/refs/heads/main/app/assets/img/logo-128.png", cat: "prod" },
   { name: "QuaX", url: "https://github.com/Teskann/QuaX", icon: "https://raw.githubusercontent.com/Teskann/QuaX/refs/heads/master/assets/readme/icon.png", cat: "media" },
-  { name: "Photopea", url: "https://www.photopea.com/", icon: "https://www.vecpea.com/promo/icon512.png", cat: "prod" },
+  { name: "Photopea", url: "https://www.photopea.com/", icon: "https://www.photopea.com/promo/icon512.png", cat: "prod" },
   { name: "FFmpeg", url: "https://ffmpeg.org/", icon: "https://avatars.githubusercontent.com/u/729418?s=200&v=4", cat: "dev" },
   { name: "Drawio", url: "https://www.drawio.com/", icon: "https://www.drawio.com/img/logo.svg", cat: "prod" },
   { name: "Ollama", url: "https://ollama.com/", icon: "https://avatars.githubusercontent.com/u/151674099?s=200&v=4", cat: "prod" },
