@@ -107,7 +107,8 @@ var tools = [
   { name: "OpenVPN", url: "https://openvpn.net/", icon: "https://avatars.githubusercontent.com/u/1569141?s=200&v=4", cat: "sec" },
   { name: "pfSense", url: "https://www.pfsense.org/", icon: "https://avatars.githubusercontent.com/u/3716965?s=200&v=4", cat: "sec" },
   { name: "Audacity", url: "https://audacityteam.org/", icon: "https://www.audacityteam.org/_astro/Audacity_Logo.DK8H7nvr.svg", cat: "media" },
-  { name: "Consumer Rights Wiki", url: "https://consumerrights.wiki", icon: "https://consumerrights.wiki/images/logo/new_fixed_logo.png", cat: "sec" }
+  { name: "Consumer Rights Wiki", url: "https://consumerrights.wiki", icon: "https://consumerrights.wiki/images/logo/new_fixed_logo.png", cat: "sec" },
+  { name: "Kdenlive", url: "https://kdenlive.org/", icon: "https://styles.redditmedia.com/t5_38211/styles/communityIcon_d7al253yi9531.png", cat: "media" }
 ];
 
 var toolsGrid = document.getElementById('toolsGrid');
