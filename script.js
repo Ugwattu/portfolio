@@ -103,12 +103,13 @@ var tools = [
   { name: "Aegis Authenticator", url: "https://getaegis.app/", icon: "https://raw.githubusercontent.com/beemdevelopment/Aegis/refs/heads/master/metadata/en-US/images/icon.png", cat: "sec" },
   { name: "Syncthing", url: "https://syncthing.net/", icon: "https://avatars.githubusercontent.com/u/7628018?s=200&v=4", cat: "prod" },
   { name: "Frigate", url: "https://frigate.video/", icon: "https://raw.githubusercontent.com/blakeblackshear/frigate/a573ea49bffb0a8a6dcd4cc83db01aaf409bd4e6/docs/static/img/branding/logo.svg", cat: "sec" },
-  { name: "Ladybird", url: "https://ladybird.org", icon: "https://raw.githubusercontent.com/LadybirdBrowser/ladybird/refs/heads/master/Base/res/icons/128x128/app-browser.png", cat: "sec" },
+  { name: "Ladybird", url: "https://ladybird.org", icon: "https://avatars.githubusercontent.com/u/134672918?s=200&v=4", cat: "sec" },
   { name: "OpenVPN", url: "https://openvpn.net/", icon: "https://avatars.githubusercontent.com/u/1569141?s=200&v=4", cat: "sec" },
   { name: "pfSense", url: "https://www.pfsense.org/", icon: "https://avatars.githubusercontent.com/u/3716965?s=200&v=4", cat: "sec" },
   { name: "Audacity", url: "https://audacityteam.org/", icon: "https://www.audacityteam.org/_astro/Audacity_Logo.DK8H7nvr.svg", cat: "media" },
   { name: "Consumer Rights Wiki", url: "https://consumerrights.wiki", icon: "https://consumerrights.wiki/images/logo/new_fixed_logo.png", cat: "sec" },
-  { name: "Kdenlive", url: "https://kdenlive.org/", icon: "https://styles.redditmedia.com/t5_38211/styles/communityIcon_d7al253yi9531.png", cat: "media" }
+  { name: "Kdenlive", url: "https://kdenlive.org/", icon: "https://styles.redditmedia.com/t5_38211/styles/communityIcon_d7al253yi9531.png", cat: "media" },
+  { name: "openGym", url: "https://opengym.ch/", icon: "https://raw.githubusercontent.com/DuarteSantos8/openGym/refs/heads/main/website/brand/kit/icons/opengym-icon-square-1024.png", cat: "prod" }
 ];
 
 var toolsGrid = document.getElementById('toolsGrid');
