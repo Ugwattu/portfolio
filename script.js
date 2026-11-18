@@ -66,10 +66,10 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 var tools = [
   { name: "Dorion", url: "https://spikehd.github.io/projects/dorion/", icon: "https://raw.githubusercontent.com/SpikeHD/Dorion/main/src-tauri/icons/icon.png", cat: "media" },
   { name: "Metrolist", url: "https://github.com/mostafaalagamy/metrolist", icon: "https://avatars.githubusercontent.com/u/260068764?s=200&v=4", cat: "media" },
-  { name: "TrueNAS", url: "https://www.truenas.com/", icon: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.osboxes.org%2Fwp-content%2Fuploads%2F2022%2F02%2Ftruenas-logo.png&f=1&nofb=1", cat: "dev" },
+  { name: "TrueNAS", url: "https://www.truenas.com/", icon: "https://avatars.githubusercontent.com/u/53482242?s=200&v=4", cat: "dev" },
   { name: "Futo", url: "https://futo.tech/", icon: "https://avatars.githubusercontent.com/u/129423434?s=200&v=4", cat: "sec" },
-  { name: "KDE", url: "https://www.kde.org/", icon: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fkde.org%2Fstuff%2Fclipart%2Flogo%2Fkde-logo-blue-transparent-3000x3000.png&f=1&nofb=1", cat: "dev" },
-  { name: "Stripe", url: "https://stripe.com/", icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGluJhW7I1NYU7jF77E-9K9I46_ib_DUNHw&s", cat: "dev" },
+  { name: "KDE", url: "https://www.kde.org/", icon: "https://avatars.githubusercontent.com/u/14312869?s=200&v=4", cat: "dev" },
+  { name: "Stripe", url: "https://stripe.com/", icon: "https://avatars.githubusercontent.com/u/856813?s=200&v=4", cat: "dev" },
   { name: "Bitwarden", url: "https://bitwarden.com/", icon: "https://avatars.githubusercontent.com/u/15990069?s=200&v=4", cat: "sec" },
   { name: "Proton", url: "https://proton.me/", icon: "https://avatars.githubusercontent.com/u/6953970?s=200&v=4", cat: "sec" },
   { name: "Signal", url: "https://signal.org/", icon: "https://avatars.githubusercontent.com/u/702459?s=200&v=4", cat: "sec" },
